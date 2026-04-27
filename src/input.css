@@ -17,9 +17,17 @@ h3,
 h4,
 h5,
 h6{
-    font-family: ;
+    font-family: 'Poppins' ;
 }
-
+button{
+    padding: 0.5em 4em;
+    background-color: white;
+    margin: auto;
+    font-weight:100;
+    font-size: xx-large;
+    border-radius: 2em;
+    color: rgb(79, 78, 78);
+}
 
 body{
     font-family: 'Open Sans',ital;
