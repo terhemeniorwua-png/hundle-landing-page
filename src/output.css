@@ -246,11 +246,6 @@
       padding-top: calc(var(--spacing) * 12);
     }
   }
-  .max-md\:pt-16 {
-    @media (width < 48rem) {
-      padding-top: calc(var(--spacing) * 16);
-    }
-  }
   .max-md\:pb-5 {
     @media (width < 48rem) {
       padding-bottom: calc(var(--spacing) * 5);
