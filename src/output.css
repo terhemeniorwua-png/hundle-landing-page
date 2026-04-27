@@ -183,6 +183,9 @@
   .items-center {
     align-items: center;
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .space-y-5 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -355,24 +358,25 @@ body {
     padding-left: 8%;
     padding-right: 8%;
   }
-  .icon {
-    color: white;
-    padding: 0.5em;
-    border: 1px solid white;
-    border-radius: 100%;
-    gap: 1em;
-  }
-  .icon:hover {
-    background-color: white;
-    color: var(--purpl);
-    transition-duration: 0.2s;
-  }
-  @media screen and (min-width:30em) {
-    body {
-      background-image: url(../images/bg-desktop.svg);
-      background-position-y: -10em;
-      padding-left: 5%;
-    }
+}
+.icon {
+  color: white;
+  padding: 0.5em 1em;
+  border: 1px solid white;
+  border-radius: 100%;
+  gap: 1em;
+  text-align: start;
+}
+.icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: rgba(255, 255, 255, 0.48);
+  transition-duration: 0.2s;
+}
+@media screen and (min-width:30em) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-position-y: -10em;
+    padding-left: 5%;
   }
 }
 @property --tw-rotate-x {
