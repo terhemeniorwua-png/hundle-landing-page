@@ -27,8 +27,20 @@ button{
     font-size: large;
     border-radius: 2em;
     color: rgb(79, 78, 78);
-   
+    border: 1px solid rgba(0, 0, 0, 0.556);
 }
+    button:hover{
+        background-color: var(--manga);
+        color: white;
+        transition-duration: 0.2s;
+        border: 1px solid black;
+    }
+    button:hover{
+        background-color: var(--manga);
+        color: white;
+        transition-duration: 0.2s;
+        border: 1px solid rgba(0, 0, 0, 0.521);
+    }
 
 body{
     font-family: 'Open Sans',ital;
@@ -42,9 +54,20 @@ body{
         background-position: top;
         /* background-position: top; */
         background-repeat: no-repeat;
-        padding-left: 10%;
-        
+        padding-left: 8%;
+        padding-right: 8%;
 }
+.icon{
+    color: white;
+    padding: 0.5em;
+    border: 1px solid white;
+    border-radius: 100%;
+    gap:1em    
+}
+.icon:hover{
+    background-color: white;
+    color: var(--purpl);
+    transition-duration: 0.2s;
 }
 
 /* Desktop */
@@ -52,5 +75,8 @@ body{
     body{
     background-image: url(../images/bg-desktop.svg);
         background-position-y: -10em;
+        padding-left: 5%;
     }
+ 
+}
 }
