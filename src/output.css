@@ -7,11 +7,17 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-black: 900;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -165,46 +171,31 @@
   }
 }
 @layer utilities {
+  .m-auto {
+    margin: auto;
+  }
   .table {
     display: table;
-  }
-  .size-5 {
-    width: calc(var(--spacing) * 5);
-    height: calc(var(--spacing) * 5);
   }
   .size-52 {
     width: calc(var(--spacing) * 52);
     height: calc(var(--spacing) * 52);
   }
-  .w-2xl {
-    width: var(--container-2xl);
+  .size-96 {
+    width: calc(var(--spacing) * 96);
+    height: calc(var(--spacing) * 96);
   }
-  .w-3xl {
-    width: var(--container-3xl);
+  .w-96 {
+    width: calc(var(--spacing) * 96);
   }
-  .w-52 {
-    width: calc(var(--spacing) * 52);
-  }
-  .w-\[10\%\] {
-    width: 10%;
-  }
-  .w-\[20\%\] {
-    width: 20%;
-  }
-  .w-\[20\] {
-    width: 20;
-  }
-  .w-\[50\%\] {
-    width: 50%;
+  .w-966 {
+    width: calc(var(--spacing) * 966);
   }
   .w-\[55\%\] {
     width: 55%;
   }
-  .w-lg {
-    width: var(--container-lg);
-  }
-  .w-sm {
-    width: var(--container-sm);
+  .w-\[80\%\] {
+    width: 80%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -219,11 +210,41 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-9 {
+    padding-top: calc(var(--spacing) * 9);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-\[1\.2em\] {
+    font-size: 1.2em;
+  }
+  .text-\[2em\] {
+    font-size: 2em;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -295,6 +316,10 @@ body {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -362,6 +387,7 @@ body {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
