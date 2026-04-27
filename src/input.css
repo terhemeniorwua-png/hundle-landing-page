@@ -64,11 +64,13 @@ body{
     border: 1px solid white;
     border-radius: 100%;
     gap:1em;
-    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon:hover{
-   border:1px solid rgba(255, 255, 255, 0.48);
-    color: rgba(255, 255, 255, 0.48);
+   border:1px solid var(--manga);
+    color: var(--manga);
     transition-duration: 0.2s;
 }
 
@@ -79,6 +81,9 @@ body{
         background-position-y: -10em;
         padding-left: 5%;
     }
- 
+    .icon{
+        position: relative;
+        left:90%;
+    }
 }
 
