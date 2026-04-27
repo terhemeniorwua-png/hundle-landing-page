@@ -24,9 +24,10 @@ button{
     background-color: white;
     margin: auto;
     font-weight:100;
-    font-size: xx-large;
+    font-size: large;
     border-radius: 2em;
     color: rgb(79, 78, 78);
+   
 }
 
 body{
@@ -41,6 +42,7 @@ body{
         background-position: top;
         /* background-position: top; */
         background-repeat: no-repeat;
+        padding-left: 10%;
         
 }
 }
