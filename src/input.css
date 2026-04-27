@@ -4,6 +4,11 @@
 
 :root {
     --purpl:hsl(257, 40%, 49%);
+    --manga:hsl(300, 69%, 71%);
+}
+@theme{
+    ---font-Poppins: "Poppins";
+    ---font-Sans: "Open Sans";
 }
 
 h1,
@@ -12,8 +17,9 @@ h3,
 h4,
 h5,
 h6{
-    font-family: 'Poppins', ital;
+    font-family: ;
 }
+
 
 body{
     font-family: 'Open Sans',ital;
